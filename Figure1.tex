@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{tikz}
+
+\begin{document}
+\begin{tikzpicture}[scale=1.5]
+  % Ground
+  \draw[thick] (-2,0) -- (5,0);
+
+  % Spring
+  \draw[decorate,decoration={coil,segment length=5pt,amplitude=5pt}] (0,0) -- (2,0);
+
+  % Mass
+  \draw[thick,fill=gray!30] (2,0) circle (0.5) node[above=0.5cm] {$m$};
+
+  % Dashed line for equilibrium position
+  \draw[dashed] (0,0) -- (0.5,0);
+
+  % Arrows and labels
+  \draw[<->,thick] (0,0.8) -- node[above] {$x_0$} (0.5,0.8);
+  \draw[<->,thick] (2,1) -- node[right] {$v_0$} (2,0.5);
+  \draw[<->,thick] (0.5,-0.3) -- node[below] {$\omega$} (2,-0.3);
+\end{tikzpicture}
+
+\end{document}
