@@ -1,0 +1,19 @@
+import numpy as np
+import matplotlib.pyplot as plt
+def calculate_A(x_0, v_0, omega):
+    return np.sqrt(x_0**2 + (v_0**2 / omega**2))
+
+x_0_values = np.linspace(-10, 10, 100)  # Change the range as needed
+v_0 = 2.0  # Initial velocity
+omega = 1.0  # Angular frequency
+
+A_values = [calculate_A(x_0, v_0, omega) for x_0 in x_0_values]
+
+
+plt.plot(x_0_values, A_values, label=r'$A = \sqrt{x_0^2 + \frac{v_0^2}{\omega^2}}$')
+plt.xlabel(r'$x_0$')
+plt.ylabel(r'$A$')
+plt.title('Graph of $A$ vs $x_0$ with $v_0$=2 and $\omega=1$')
+plt.legend()
+plt.grid(True)
+plt.show()
