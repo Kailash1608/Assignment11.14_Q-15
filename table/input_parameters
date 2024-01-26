@@ -1,0 +1,15 @@
+begin{table}[h]
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Symbols} & \textbf{Definition}\\ \hline
+$x$ & Displacement \\ \hline
+$t$ & Time \\ \hline
+$v$ & Velocity\\ \hline
+$\omega$ & Angular velocity   \\ \hline
+$\theta$ & Phase difference\\ \hline
+$m$ & Mass\\ \hline
+$a$ & Acceleration\\ \hline
+$k$ & Force constant\\ \hline
+$F_r$ & Restoring Force\\ \hline
+\end{tabular}
+\end{table}
